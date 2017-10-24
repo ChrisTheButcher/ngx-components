@@ -1,7 +1,7 @@
 {
 	"name": "ngx-components",
 	"version": "1.0.0",
-	"description": "Wot!",
+	"description": "Useful Ngx Components",
 	"main": "bundles/ngx-components.umd.min.js",
 	"module": "index.js",
 	"typings": "index.d.ts",

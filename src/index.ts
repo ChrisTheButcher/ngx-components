@@ -1,3 +1,3 @@
-export { SeedModule } from './seed.module';
-export { SeedService } from './seed.service';
-export { SeedComponent } from './seed.component';
+export { NgxUsefulComponentsModule } from './ngx-useful-components.module';
+export { IconComponent } from './icon.component';
+export { YoutubeComponent } from './youtube.component';

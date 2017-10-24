@@ -9,9 +9,10 @@
     "transpile": "ngc",
     "package": "rollup -c",
     "minify": "./node_modules/uglify-js/bin/uglifyjs dist/bundles/ngx-useful-components.umd.js --screw-ie8 --compress --mangle --comments --output dist/bundles/ngx-useful-components.umd.min.js",
-    "copy": "cpx './package-dist.json' dist && renamer --find 'package-dist.json' --replace 'package.json' ./dist/*",
+    "copy": "cpx './package-dist.json' dist && renamer --find 'package-dist.json' --replace 'package.json' ./dist/* && cpx './README-dist.md' dist && renamer --find 'README-dist.md' --replace 'README.md' ./dist/*",
     "build": "npm run clean && npm run transpile && npm run package && npm run minify && npm run copy",
-    "publish": "npm run build && cd dist && npm publish"   
+    "publish": "npm run build && cd dist && npm publish",
+    "test": "cd test-app && npm install ngx-useful-components@latest -D && npm install && ng serve"
   },
   "license": "MIT",
   "homepage": "github.com/ChrisTheButcher/",
@@ -22,6 +23,7 @@
   "devDependencies": {
     "@angular/compiler": "^4.4.6",
     "@angular/compiler-cli": "^4.4.6",
+    "@angular/platform-browser": "^4.4.6",
     "cpx": "^1.5.0",
     "renamer": "^0.6.1",
     "rimraf": "^2.6.2",

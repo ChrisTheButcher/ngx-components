@@ -1,23 +1,23 @@
 {
-	"name": "ngx-components",
-	"version": "1.0.0",
+	"name": "ngx-useful-components",
+	"version": "1.0.4",
 	"description": "Useful Ngx Components",
-	"main": "bundles/ngx-components.umd.min.js",
+	"main": "bundles/ngx-useful-components.umd.min.js",
 	"module": "index.js",
 	"typings": "index.d.ts",
 	"keywords": [],
 	"author": {
-		"name": "",
-		"email": ""
+		"name": "christhebutcher",
+		"email": "ccwijnia@gmail.com"
 	},
 	"license": "",
 	"repository": {
 		"type": "git",
-		"url": ""
+		"url": "github.com/ChrisTheButcher/"
 	},
-	"homepage": "",
+	"homepage": "github.com/ChrisTheButcher/",
 	"bugs": {
-		"url": ""
+		"url": "github.com/ChrisTheButcher/"
 	},
 	"peerDependencies": {
 		"@angular/core": "^2.4.0",

@@ -1,6 +1,6 @@
 export default {
 	input: 'dist/index.js',
-	dest: 'dist/bundles/ngx-components.umd.js',
+	dest: 'dist/bundles/ngx-useful-components.umd.js',
 	sourceMap: false,
 	format: 'umd',
 	name: 'ngx-components',

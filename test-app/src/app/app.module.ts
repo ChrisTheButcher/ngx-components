@@ -2,17 +2,19 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
-import { NgxUsefulComponentsModule } from "ngx-useful-components"; 
+import { YoutubeComponent } from "./youtube.component"; 
  
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    YoutubeComponent
   ],
   imports: [
-    BrowserModule,
-    NgxUsefulComponentsModule 
+    BrowserModule
   ],
-  providers: [],
+  providers: [
+    
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { 

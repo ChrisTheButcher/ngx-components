@@ -18,5 +18,11 @@
   </li>
 </ul>
 
-<icon anchor="hello2" baseUrl="testtest2"></icon>
-<youtube id="Wx_2SVm9Jgo"></youtube>
+<!--<icon [baseUrl]="'base-url/'" [anchor]="'icon-name'"></icon>-->
+
+<youtube
+  [url]="'hhttps://www.youtube.com/watch?v=Wx_2SVm9Jgo'" 
+  (ready)="ready($event)" 
+  (stateChange)="stateChange($event)" 
+  [playerVars]="{ autoplay: 1, controls: 1 }">
+</youtube>

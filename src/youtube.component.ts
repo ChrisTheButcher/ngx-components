@@ -34,11 +34,12 @@ import { DomSanitizer, SafeResourceUrl } from "@angular/platform-browser";
 })
 export class YoutubeComponent {
     @Input() id: string;    
+    @Input() autoplay: boolean;    
     src: any;
 
     constructor(private sanitizer: DomSanitizer) {}
 
     ngOnInit() {
-        this.src = this.sanitizer.bypassSecurityTrustResourceUrl(`https://www.youtube.com/embed/${this.id}?autoplay=1`);
+        this.src = this.sanitizer.bypassSecurityTrustResourceUrl(`https://www.youtube.com/embed/${this.id}?autoplay=${this.autoplay ? 1 : 0}`);
     }
 }

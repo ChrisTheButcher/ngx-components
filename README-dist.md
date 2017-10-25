@@ -25,5 +25,5 @@ import { YoutubeComponent, IconComponent } from "ngx-useful-components";
 ```
 
 #### Included components
-1. `<youtube [id]="id"></youtube>`
+1. `<youtube [id]="id" [autoplay]="true"></youtube>`
 2. `<icon [baseUrl]="baseUrl" [anchor]="anchor"></icon>`
